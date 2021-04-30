@@ -4,5 +4,5 @@ layout: categories
 permalink: /categories/
 author_profile: true
 categories:
-  -Project
+  -project
 ---
