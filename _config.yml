@@ -96,13 +96,13 @@ analytics:
 author:
   name             : "Soyeon"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : ".........."
+  bio              : "백엔드 개발을 공부중입니다."
   location         : "Seoul"
   email            : "liv660n@gmail.com"
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: mailto:liv660n@gmail.com
+    # label: "Email"
+    #  icon: "fas fa-fw fa-envelope-square"
+    #  url: mailto:liv660n@gmail.com
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
