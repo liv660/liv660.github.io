@@ -16,9 +16,9 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "Liv"
+title                    : "Liv Velog"
 title_separator          : "&#124;"
-subtitle                 : "Version 1.0" # site tagline that appears below site title in masthead
+subtitle                 : "흔적 쌓기" # site tagline that appears below site title in masthead
 name                     : "Soyeon"
 description              : "Velog"
 url                      : "https://liv660.github.io"# the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
@@ -26,7 +26,7 @@ baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "liv660/liv660.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : "기록 Velog"# overrides the website title displayed in the masthead, use " " for no title
+masthead_title           : "Velog"# overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs            : true # true, false (default)
 words_per_minute         : 200
 comments:
@@ -97,12 +97,12 @@ author:
   name             : "Soyeon"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : ".........."
-  location         : "Somewhere"
+  location         : "Seoul"
   email            : "liv660n@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "liv660n@gmail.com"
+      url: mailto:liv660n@gmail.com
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -124,7 +124,7 @@ footer:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "liv660n@gmail.com"
+      url: mailto:liv660n@gmail.com
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url:
