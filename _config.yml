@@ -280,9 +280,16 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
+      words_per_minute: 250
       comments: true
       share: true
       related: true
+      show_date: true
+      date_format: "%B %-d, %Y"
+      search: true
+    atom_feed:
+      hide: true
+
 
   # _pages
   - scope:
