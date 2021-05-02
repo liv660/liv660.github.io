@@ -9,7 +9,7 @@
   @include breakpoint($large) {
     float: right;
     width: calc(100% - #{$right-sidebar-width-narrow});
-    padding: 0 $right-sidebar-width-narrow 0 ($right-sidebar-width-narrow/5);
+    padding: 0 $right-sidebar-width-narrow 0 0;
   }
 
   @include breakpoint($x-large) {
