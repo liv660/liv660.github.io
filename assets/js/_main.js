@@ -133,4 +133,13 @@ $(document).ready(function() {
       $(this).append(anchor);
     }
   });
+
+  $('.fade').slick({
+  dots: true,
+  infinite: true,
+  speed: 500,
+  fade: true,
+  cssEase: 'linear'
+  });
+  
 });
