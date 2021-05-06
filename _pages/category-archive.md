@@ -6,4 +6,5 @@ author_profile: true
 categories:
   -diary
   -project
+  -TIL
 ---
