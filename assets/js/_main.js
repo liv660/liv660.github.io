@@ -136,10 +136,6 @@ $(document).ready(function() {
   });
 
   //bxslider
-  $(".slider-box .bxslider").bxSlider({
-    mode: 'fade',
-    captions: true,
-    slideWidth: 600
-  });
+  $(".slider-box .bxslider").bxSlider();
 
 });
