@@ -1,5 +1,16 @@
 <!-- start custom head snippets -->
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+<script type="text/javascript">
+  $(documnet).ready(function() {
+    $('.slider-box .bxslider').bxSlider({
+      mode: 'fade',
+      captions: true,
+      slideWidth: 600
+    });
+  });
+</script>
 <!-- insert favicons. use https://realfavicongenerator.net/ -->
 <link rel="apple-touch-icon" sizes="180x180" href="{{site.baseurl}}/favicon_package_v0.16/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="{{site.baseurl}}/favicon_package_v0.16/favicon-32x32.png">
@@ -9,13 +20,4 @@
 <meta name="application-name" content="Livelog">
 <meta name="msapplication-TileColor" content="#ffc40d">
 <meta name="theme-color" content="#f2b3b8">
-<script type="text/javascript">
-  $(function(){
-    $('.slider-box .bxslider').bxSlider({
-      mode: 'fade',
-      captions: true,
-      slideWidth: 600
-    });
-  });
-</script>
 <!-- end custom head snippets -->
