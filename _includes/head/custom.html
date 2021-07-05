@@ -7,8 +7,8 @@
 .slider li img {width:620px;}
 
 .slide-page {text-align:center;}
-.slide-page .slide-page-btn {color:#fff; border:1px solid #ccc; font-size:10px; background:#ccc;}
-.slide-page .slide-page-btn:hover {background:none; color:#000;}
+.slide-page .slide-page-btn {border:1px solid #ccc; width:20px; height:5px; margin:0 3px; background:#ccc;}
+.slide-page .slide-page-btn:hover {background:none;}
 .slide-page .slide-page-btn:focus {outline:none;}
 </style>
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
@@ -29,6 +29,11 @@
       curSlide %= slider_list.length
     })
   });
+</script>
+<script type="text/javascript">
+function changeSlide(pageNo) {
+  console.log("pageNo",pageNo)
+}
 </script>
 <!-- insert favicons. use https://realfavicongenerator.net/ -->
 <link rel="apple-touch-icon" sizes="180x180" href="{{site.baseurl}}/favicon_package_v0.16/apple-touch-icon.png">
