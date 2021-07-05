@@ -297,3 +297,8 @@ defaults:
     values:
       layout: single
       author_profile: true
+
+# add scripts
+head_scripts:
+  - https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js
+  - /assets/js/jquery.bxslider.js

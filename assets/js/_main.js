@@ -3,16 +3,9 @@
    ========================================================================== */
 
 $(document).ready(function() {
+
   // FitVids init
   $("#main").fitVids();
-
-  //bxslider
-  $(".slider-box .bxslider").bxSlider({
-    mode: 'fade',
-    captions: true,
-    slideWidth: 600
-  });
-
 
   // Sticky sidebar
   var stickySideBar = function() {
@@ -140,6 +133,13 @@ $(document).ready(function() {
       anchor.title = "Permalink";
       $(this).append(anchor);
     }
+  });
+
+  //bxslider
+  $(".slider-box .bxslider").bxSlider({
+    mode: 'fade',
+    captions: true,
+    slideWidth: 600
   });
 
 });
