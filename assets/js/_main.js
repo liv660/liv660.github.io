@@ -136,6 +136,6 @@ $(document).ready(function() {
   });
 
   //bxslider
-  $(".slider-box .bxslider").bxSlider();
+  //$(".slider-box .bxslider").bxSlider();
 
 });
