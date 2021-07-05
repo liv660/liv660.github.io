@@ -134,4 +134,13 @@ $(document).ready(function() {
     }
   });
 
+  //bxslider
+  $(document).ready(function(){
+     $('.slider-box').bxSlider({
+       mode: 'fade'
+       , captions: true
+       , slideWidth: 600
+     });
+  });
+
 });
