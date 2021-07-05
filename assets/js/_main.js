@@ -7,13 +7,12 @@ $(document).ready(function() {
   $("#main").fitVids();
 
   //bxslider
-  $(function() {
-    $('.bxslider').bxSlider({
-      mode: 'fade',
-      captions: true,
-      slideWidth: 600
-    });
+  $(".bxslider").bxSlider({
+    mode: 'fade',
+    captions: true,
+    slideWidth: 600
   });
+
 
   // Sticky sidebar
   var stickySideBar = function() {
