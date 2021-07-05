@@ -34,11 +34,13 @@ $(document).ready(function() {
   });
 
   //bxslider
- $('.slider-box').bxSlider({
-   mode: 'fade'
-   , captions: true
-   , slideWidth: 600
- });
+  $(function() {
+    $('.slider-box').bxSlider({
+      mode: 'fade'
+      , captions: true
+      , slideWidth: 600
+    });
+  })
 
   // Close search screen with Esc key
   $(document).keyup(function(e) {
