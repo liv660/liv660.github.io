@@ -1,11 +1,15 @@
 <!-- start custom head snippets -->
 <style type="text/css">
-.slider-box {margin:0 auto; overflow:hidden; width:620px; height:400px;}
+.slider-box {margin:0 auto; overflow:hidden; width:620px; height:380px;}
 .slider {padding:0; margin:0; list-style-type:none; position:relative;}
 .slider li {position: absolute;}
-.slider li .slide-name{text-align: center;}
+.slider li .slide-name{text-align:center;}
 .slider li img {width:620px;}
-.slide-page ul li {display:inline-block;}
+
+.slide-page {text-align:center; min-width:20px;}
+.slide-page ul {width:100%;}
+.slide-page ul li {display:inline-block; width:10px; height:10px; cursor:pointer;}
+.slide-page ul .active {background:purple;}
 </style>
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 <script type="text/javascript">
@@ -23,6 +27,11 @@
       slider_list.eq(nextSlide).animate({'left': '-=620px'})
       curSlide++
       curSlide %= slider_list.length
+    })
+
+    $.each($('.slider-box ul li'), function() {
+      var li = document.createElement('li')
+      $('.slide-page ul').append(li)
     })
   });
 </script>
