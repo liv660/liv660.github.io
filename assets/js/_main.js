@@ -7,7 +7,7 @@ $(document).ready(function() {
   $("#main").fitVids();
 
   //bxslider
-  $(".bxslider").bxSlider({
+  $(".slider-box .bxslider").bxSlider({
     mode: 'fade',
     captions: true,
     slideWidth: 600
