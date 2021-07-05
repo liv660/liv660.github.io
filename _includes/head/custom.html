@@ -13,6 +13,9 @@
     slider_list.css('left', $(".slider-box").css('width'))
 
     slider_list.css('left', 0)
+    $(".slider-name").hide()
+    $(".sdlier li:eq(0) .slider-name").show()
+
     var curSlide = 0
     $(".slider-box").click(function() {
       var nextSlide = curSlide + 1
@@ -22,6 +25,7 @@
       slider_list.eq(nextSlide).animate({'left': '-=620px'})
       curSlide++
       curSlide %= slider_list.length
+      $(".slider-name").show()
     })
   });
 </script>
