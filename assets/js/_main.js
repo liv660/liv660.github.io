@@ -134,8 +134,4 @@ $(document).ready(function() {
       $(this).append(anchor);
     }
   });
-
-  //bxslider
-  //$(".slider-box .bxslider").bxSlider();
-
 });
