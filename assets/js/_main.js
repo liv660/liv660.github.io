@@ -33,6 +33,13 @@ $(document).ready(function() {
     $(".author__urls-wrapper button").toggleClass("open");
   });
 
+  //bxslider
+ $('.slider-box').bxSlider({
+   mode: 'fade'
+   , captions: true
+   , slideWidth: 600
+ });
+
   // Close search screen with Esc key
   $(document).keyup(function(e) {
     if (e.keyCode === 27) {
@@ -133,12 +140,5 @@ $(document).ready(function() {
       $(this).append(anchor);
     }
   });
-
-  //bxslider
- $('.slider-box').bxSlider({
-   mode: 'fade'
-   , captions: true
-   , slideWidth: 600
- });
 
 });
