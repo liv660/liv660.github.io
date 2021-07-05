@@ -3,7 +3,8 @@
 .slider-box {margin:0 auto; overflow:hidden; height:400px;}
 .slider {padding:0; margin:0; list-style-type:none; position:relative;}
 .slider li {position: absolute;}
-.slider li img {width:650px;}
+.slider li .slide-name{text-align: center;}
+.slider li img {width:620px;}
 </style>
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 <script type="text/javascript">
@@ -17,8 +18,8 @@
       var nextSlide = curSlide + 1
       nextSlide %= slider_list.length
       slider_list.eq(curSlide).animate({'left': '-=' + $('.slider-box').css('width')})
-      slider_list.eq(nextSlide).css('left', '650px')
-      slider_list.eq(nextSlide).animate({'left': '-=650px'})
+      slider_list.eq(nextSlide).css('left', '620px')
+      slider_list.eq(nextSlide).animate({'left': '-=620px'})
       curSlide++
       curSlide %= slider_list.length
     })
