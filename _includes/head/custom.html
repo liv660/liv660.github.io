@@ -6,10 +6,9 @@
 .slider li .slide-name{text-align:center;}
 .slider li img {width:620px;}
 
-.slide-page {text-align:center; min-width:20px;}
-.slide-page ul {width:100%;}
-.slide-page ul li {display:inline-block; width:10px; height:10px; cursor:pointer;}
-.slide-page ul .active {background:purple;}
+.slide-page {text-align:center;}
+.slide-page .slide-page-btn {border-radius:100%; border:1px solid #ccc; width:9px; height:12px; background:#ccc;}
+.slide-page .slide-page-btn:hover {background:none;}
 </style>
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 <script type="text/javascript">
@@ -27,11 +26,6 @@
       slider_list.eq(nextSlide).animate({'left': '-=620px'})
       curSlide++
       curSlide %= slider_list.length
-    })
-
-    $.each($('.slider-box ul li'), function() {
-      var li = document.createElement('li')
-      $('.slide-page ul').append(li)
     })
   });
 </script>
