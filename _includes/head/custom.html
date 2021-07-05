@@ -34,7 +34,14 @@
 function changeSlide(pageNo) {
   console.log("pageNo",pageNo)
   var curSlide = pageNo
-  $(".slider-box").click()
+  var nextSlide = curSlide + 1
+  nextSlide %= slider_list.length
+  slider_list.eq(curSlide).css('left', 0)
+  slider_list.eq(curSlide).animate({'left': '-=' + $('.slider-box').css('width')})
+  slider_list.eq(nextSlide).css('left', '620px')
+  slider_list.eq(nextSlide).animate({'left': '-=620px'})
+  curSlide++
+  curSlide %= slider_list.length
 }
 </script>
 <!-- insert favicons. use https://realfavicongenerator.net/ -->
