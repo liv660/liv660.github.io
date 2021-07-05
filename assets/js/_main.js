@@ -6,6 +6,15 @@ $(document).ready(function() {
   // FitVids init
   $("#main").fitVids();
 
+  //bxslider
+  $(function() {
+    $('.bxslider').bxSlider({
+      mode: 'fade',
+      captions: true,
+      slideWidth: 600
+    });
+  });
+
   // Sticky sidebar
   var stickySideBar = function() {
     var show =
@@ -32,15 +41,6 @@ $(document).ready(function() {
     $(".author__urls").toggleClass("is--visible");
     $(".author__urls-wrapper button").toggleClass("open");
   });
-
-  //bxslider
-  $(function() {
-    $('.slider-box').bxSlider({
-      mode: 'fade'
-      , captions: true
-      , slideWidth: 600
-    });
-  })
 
   // Close search screen with Esc key
   $(document).keyup(function(e) {
