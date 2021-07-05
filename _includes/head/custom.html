@@ -1,14 +1,26 @@
 <!-- start custom head snippets -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+<style type="text/css">
+.slider-box {margin:0 auto; overflow:hidden; width:300px;}
+.slider {padding:0; margin:0; list-style-type:none; position:relative;}
+.slider li {position: absolute;}
+.slider li img {width:300px;}
+</style>
 <script type="text/javascript">
   $(document).ready(function() {
-    $('.slider-box .bxslider').bxSlider({
-      mode: 'fade',
-      captions: true,
-      slideWidth: 600
-    });
+    var slider_list = $(".slider li")
+    slider_list.css('left', $(".slider-box").css('width'))
+
+    slider_listcss('left', 0)
+    var curSlide = 0
+    $(".slider-box").click(function() {
+      var nextSlide = curSlide + 1
+      nextSlide %= slider_list.length
+      slider_list.eq(curSlide).animate({'left': '-=' + $('.slider-box').css('width')})
+      slider_list.eq(nextSlide).css('left', '300px')
+      slider_list.eq(nextSlide).animate({'left': '-=300px'})
+      curSlide++
+      curSlide %= slider_list.length
+    })
   });
 </script>
 <!-- insert favicons. use https://realfavicongenerator.net/ -->
