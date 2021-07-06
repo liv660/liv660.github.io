@@ -26,7 +26,7 @@
       slider_list.eq(curSlide).animate({'left': '-=' + $('.slider-box').css('width')})
       slider_list.eq(nextSlide).css('left', '620px')
       slider_list.eq(nextSlide).animate({'left': '-=620px'})
-      
+
       curSlide++
       curSlide %= slider_list.length
     })
@@ -36,8 +36,8 @@
 function changeSlide(pageNo) {
   console.log("pageNo",pageNo)
 
-  var slider_list = $(".slider li")
-  slider_list.css('left', $("#sliderbox").css("width"))
+  var slider_list = $('.slider li')
+  slider_list.css('left', $('.slider-box').css('width'))
   slider_list.eq(pageNo).css('left', 0)
 }
 </script>
