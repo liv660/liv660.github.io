@@ -20,6 +20,11 @@
     slider_list.css('left', $(".slider-box").css('width'))
     slider_list.eq(0).css('left', 0)
 
+    $(".slide-more-content").hide()
+
+    $(".slide-more-btn").click(function() {
+      $(".slide-more-content").toggle()
+    })
     /*
     var curSlide = 0
     $(".slider-box").click(function() {
