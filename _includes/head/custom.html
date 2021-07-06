@@ -1,10 +1,10 @@
 <!-- start custom head snippets -->
 <style type="text/css">
-.slider-box {margin:0 auto; overflow:hidden; width:620px; height:380px;}
+.slider-box {margin:0 auto; overflow:hidden; width:800px; height:810px;}
 .slider {padding:0; margin:0; list-style-type:none; position:relative;}
 .slider li {position: absolute;}
 .slider li .slide-name{text-align:center;}
-.slider li img {width:620px;}
+.slider li img {width:100%;}
 
 .slide-page {text-align:center;}
 .slide-page .slide-page-btn {border:1px solid #ccc; width:20px; height:5px; margin:0 3px; background:#ccc;}
@@ -24,8 +24,8 @@
       nextSlide %= slider_list.length
 
       slider_list.eq(curSlide).animate({'left': '-=' + $('.slider-box').css('width')})
-      slider_list.eq(nextSlide).css('left', '620px')
-      slider_list.eq(nextSlide).animate({'left': '-=620px'})
+      slider_list.eq(nextSlide).css('left', $(".slider-box").css('width'))
+      slider_list.eq(nextSlide).animate({'left': '-=' + $('.slider-box').css('width')})
 
       curSlide++
       curSlide %= slider_list.length
