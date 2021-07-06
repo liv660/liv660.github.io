@@ -35,10 +35,12 @@
 <script type="text/javascript">
 function changeSlide(pageNo) {
   console.log("pageNo",pageNo)
+  $('.slide-page-btn').css('background', '#ccc')
 
   var slider_list = $('.slider li')
   slider_list.css('left', $('.slider-box').css('width'))
   slider_list.eq(pageNo).css('left', 0)
+  $(event.target).css('background', 'none')
 }
 </script>
 <!-- insert favicons. use https://realfavicongenerator.net/ -->
