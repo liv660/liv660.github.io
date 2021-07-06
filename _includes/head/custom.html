@@ -1,6 +1,6 @@
 <!-- start custom head snippets -->
 <style type="text/css">
-.slider-box {margin:0 auto; overflow:hidden; width:800px; height:810px;}
+.slider-box {margin:0 auto; overflow:hidden; width:800px; height:455px;}
 .slider {padding:0; margin:0; list-style-type:none; position:relative;}
 .slider li {position: absolute;}
 .slider li .slide-name{text-align:center;}
@@ -14,10 +14,13 @@
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 <script type="text/javascript">
   $(document).ready(function() {
+    $(".slide-page:eq(0)").css('background', 'none')
+
     var slider_list = $(".slider li")
     slider_list.css('left', $(".slider-box").css('width'))
     slider_list.eq(0).css('left', 0)
 
+    /*
     var curSlide = 0
     $(".slider-box").click(function() {
       var nextSlide = curSlide + 1
@@ -30,6 +33,7 @@
       curSlide++
       curSlide %= slider_list.length
     })
+    */
   });
 </script>
 <script type="text/javascript">
