@@ -52,7 +52,7 @@
     if($("ul").hasClass("final-detail")) {
       $(".final-detail div:eq(0)").show()
       for(var i = 1; i < 12; i++) {
-        $(".final-detail div:eq(i)").hide()
+        $(".final-detail").find("div").eq(i).hide()
       }
     }
 
