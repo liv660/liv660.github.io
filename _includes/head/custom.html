@@ -50,8 +50,7 @@
     }
 
     if($("ul").hasClass("final-detail")) {
-      $(".final-detail div:eq(0)").show()
-      for(var i = 1; i < 12; i++) {
+      for(var i = 0; i < 12; i++) {
         $(".final-detail").find("div").eq(i).hide()
       }
     }
@@ -72,6 +71,12 @@ function changeSlide(pageNo) {
     showSemiDetail(pageNo)
   }
 
+  if($("ul").hasClass("final-detail") && pageNo >= 2) {
+    showFinalDetail(pageNo)
+  } else {
+    $(".final-detail div:visible").hide()
+  }
+
 }
 </script>
 <script type="text/javascript">
@@ -89,6 +94,12 @@ function showSemiDetail(pageNo) {
     $(".semi-detail div:eq(0)").hide()
     $(".semi-detail div:eq(2)").hide()
   }
+}
+</script>
+<script type="text/javascript">
+function showFinalDetail(pageNo) {
+  $(".final-detail div:visible").hide()
+  $(".final-detail").find("div").eq((pageNo-2)).show()
 }
 </script>
 <!-- insert favicons. use https://realfavicongenerator.net/ -->
