@@ -13,8 +13,6 @@
 .slide-page .slide-page-btn:hover {background:none;}
 .slide-page .slide-page-btn:focus {outline:none;}
 
-.content-wrap {margin-bottom:20px;}
-.content-wrap .content {padding-left:20px;}
 </style>
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 <script type="text/javascript">
@@ -44,9 +42,20 @@
       curSlide %= slider_list.length
     })
     */
-    $(".slide-detail div:eq(0)").show()
-    $(".slide-detail div:eq(1)").hide()
-    $(".slide-detail div:eq(2)").hide()
+
+    if($("ul").hasClass("semi-detail")) {
+      $(".semi-detail div:eq(0)").show()
+      $(".semi-detail div:eq(1)").hide()
+      $(".semi-detail div:eq(2)").hide()
+    }
+
+    if($("ul").hasClass("final-detail")) {
+      $(".final-detail div:eq(0)").show()
+      for(var i = 1; i < 12; i++) {
+        $(".final-detail div:eq(i)").hide()
+      }
+    }
+
   });
 </script>
 <script type="text/javascript">
@@ -59,18 +68,26 @@ function changeSlide(pageNo) {
   slider_list.eq(pageNo).css('left', 0)
   $(event.target).css('background', 'none')
 
+  if($("ul").hasClass("semi-detail")) {
+    showSemiDetail(pageNo)
+  }
+
+}
+</script>
+<script type="text/javascript">
+function showSemiDetail(pageNo) {
   if(pageNo == 0) {
-    $(".slide-detail div:eq(0)").show()
-    $(".slide-detail div:eq(1)").hide()
-    $(".slide-detail div:eq(2)").hide()
+    $(".semi-detail div:eq(0)").show()
+    $(".semi-detail div:eq(1)").hide()
+    $(".semi-detail div:eq(2)").hide()
   } else if (pageNo == 6) {
-    $(".slide-detail div:eq(2)").show()
-    $(".slide-detail div:eq(0)").hide()
-    $(".slide-detail div:eq(1)").hide()
+    $(".semi-detail div:eq(2)").show()
+    $(".semi-detail div:eq(0)").hide()
+    $(".semi-detail div:eq(1)").hide()
   } else {
-    $(".slide-detail div:eq(1)").show()
-    $(".slide-detail div:eq(0)").hide()
-    $(".slide-detail div:eq(2)").hide()
+    $(".semi-detail div:eq(1)").show()
+    $(".semi-detail div:eq(0)").hide()
+    $(".semi-detail div:eq(2)").hide()
   }
 }
 </script>
