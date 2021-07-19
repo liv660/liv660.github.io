@@ -42,6 +42,9 @@
       curSlide %= slider_list.length
     })
     */
+    $(".slide-detail div:eq(0)").show()
+    $(".slide-detail div:eq(1)").hide()
+    $(".slide-detail div:eq(2)").hide()
   });
 </script>
 <script type="text/javascript">
@@ -53,6 +56,20 @@ function changeSlide(pageNo) {
   slider_list.css('left', $('.slider-box').css('width'))
   slider_list.eq(pageNo).css('left', 0)
   $(event.target).css('background', 'none')
+
+  if(pageNo == 0) {
+      $(".slide-detail div:eq(0)").show()
+      $(".slide-detail div:eq(1)").hide()
+      $(".slide-detail div:eq(2)").hide()
+  } else if (pageNo == 1) {
+      $(".slide-detail div:eq(1)").show()
+      $(".slide-detail div:eq(0)").hide()
+      $(".slide-detail div:eq(2)").hide()
+  } else {
+      $(".slide-detail div:eq(2)").show()
+      $(".slide-detail div:eq(0)").hide()
+      $(".slide-detail div:eq(1)").hide()
+  }
 }
 </script>
 <!-- insert favicons. use https://realfavicongenerator.net/ -->
